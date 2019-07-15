@@ -1,0 +1,49 @@
+.menu {
+  list-style: none;
+
+  width: 100%;
+
+  padding: 0;
+}
+
+.menuItem {
+  display: inline-block;
+}
+
+.menuItem a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 2px solid blue;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu ul :hover {
+  color: blue;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.subMenuBlock {
+  height: 100px;
+  width: 100px;
+  text-align: right;
+  padding: 10px;
+  position: absolute;
+
+  display: none;
+  border: 2px solid blue;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.menuItem:hover > .subMenuBlock {
+  display: block;
+}
+.subMenuItem {
+  display: block;
+  font-size: 12px;
+  margin: 2px;
+}
